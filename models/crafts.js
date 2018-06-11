@@ -12,19 +12,17 @@ var craftSchema = new Schema({
     type: String,
     required: true
   },
-  // `note` is an object that stores a Note id
-  // The ref property links the ObjectId to the Note model
-  // This allows us to populate the Article with an associated Note
+  // `note` is an object that stores a Note id. 
   note: {
     type: Schema.Types.ObjectId,
-    ref: "Note"
+    ref: "note"
   }
 });
 
 //  mongoose's model method
-var crafts = mongoose.model("crafts", craftSchema);
+var Crafts = mongoose.model("crafts", craftSchema);
 
 // Export the model
-module.exports = craftSchema;
+module.exports = Crafts;
 
 
