@@ -24,6 +24,11 @@ db.on("error", function(error) {
 // *add in the env for heroku
 var PORT = process.env.PORT || 3000;
 
+//connecting to the mongoDB for heroku vs local.
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
+
 var app = express();
 
 console.log("\n***********************************\n" +
