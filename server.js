@@ -10,7 +10,7 @@ var cheerio = require("cheerio");
 // Require all models Crafts and Note.
 var db = require("./models");
 
-// *add in the env for heroku
+// * add in the env for heroku
 var PORT = process.env.PORT || 3000;
 
 //connecting to the mongoDB for heroku vs local.
