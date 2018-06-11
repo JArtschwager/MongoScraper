@@ -1,0 +1,88 @@
+.container {
+    display: flex; 
+}
+
+.header-style {
+    padding-top: 15px;
+    display: flex;
+    background: rgba(57, 82, 65);
+    border-bottom: 2px solid #cccccc;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.button {
+    background: rgba(57, 82, 65 0.5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(4, 72, 25, 0.2);
+
+}
+
+
+.banner {
+    text-align: center;
+    display: center;
+    padding: 25px;
+    background-image: url('../img/craft-flowers.jpg');
+    background-image: center;
+    height: 600px;
+}
+
+.center-button {
+    background: rgba(123, 140, 117, 0.5);
+    font-size: 30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin: auto;
+    width: 50%;
+}
+
+.center-button:hover {
+    background: rgba(123, 140, 117, 1.0);
+
+}
+
+/* .articles {
+
+}  */
+
+.footer-style {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background: rgb(57, 82, 65);
+    border-top: 2px solid #cccccc;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+
+
+#crafts {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+    height: 700px;
+  }
+  #notes {
+    float: right;
+    width: 30%;
+  }
