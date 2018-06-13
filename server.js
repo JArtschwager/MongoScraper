@@ -14,10 +14,16 @@ var db = require("./models");
 var PORT = process.env.PORT || 3000;
 
 //connecting to the mongoDB for heroku vs local.
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/craftDB";
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
+var databaseURL = "mongodb://localhost/craftDB";
 
+// mongoose.Promise = Promise;
+// mongoose.connect(MONGODB_URI);
+
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI);
+} else {
+  mongoose.connect(databaseURL);
+}
 
 var app = express();
 
